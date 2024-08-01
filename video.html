@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        /* Общие стили для страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Чёрный фон */
+            color: white; /* Белый цвет текста */
+            font-family: Arial, sans-serif; /* Шрифт */
+            position: relative; /* Позволяет использовать z-index */
+        }
+
+        /* Стили для контейнера с видео */
+        .video-container {
+            text-align: center; /* Центрирование видео */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Стили для видео */
+        video {
+            width: 2560px; /* Ширина видео */
+            height: 1000px; /* Высота видео */
+            display: block; /* Убирает отступы вокруг видео */
+            margin: 0 auto; /* Центрирует видео по горизонтали */
+        }
+
+        /* Стили для кнопки */
+        .home-button {
+            display: block;
+            width: 100px;
+            padding: 10px;
+            background-color: #444; /* Цвет фона кнопки */
+            color: white; /* Цвет текста кнопки */
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10; /* Устанавливает кнопку поверх других элементов */
+        }
+
+        .home-button:hover {
+            background-color: #666; /* Цвет фона кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-button">Головна</a> <!-- Ссылка на главную страницу -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="video2.mp4" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+    </div>
+</body>
+</html>
